@@ -1,0 +1,116 @@
+---
+  0 debug pnpm:package-json: 
+    initial: 
+      name: "vueproject"
+      version: "1.0.0"
+      description: "My frist vue project"
+      author: 
+        name: "MistletoeXW"
+        email: "15178931042@qq.com"
+      private: true
+      scripts: 
+        dev: "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js"
+        start: "npm run dev"
+        unit: "jest --config test/unit/jest.conf.js --coverage"
+        e2e: "node test/e2e/runner.js"
+        test: "npm run unit && npm run e2e"
+        lint: "eslint --ext .js,.vue src test/unit test/e2e/specs"
+        build: "node build/build.js"
+      dependencies: 
+        fastclick: "^1.0.6"
+        stylus: "^0.54.5"
+        stylus-loader: "^3.0.2"
+        vue: "^2.5.2"
+        vue-router: "^3.0.1"
+      devDependencies: 
+        autoprefixer: "^7.1.2"
+        babel-core: "^6.22.1"
+        babel-eslint: "^8.2.1"
+        babel-helper-vue-jsx-merge-props: "^2.0.3"
+        babel-jest: "^21.0.2"
+        babel-loader: "^7.1.1"
+        babel-plugin-dynamic-import-node: "^1.2.0"
+        babel-plugin-syntax-jsx: "^6.18.0"
+        babel-plugin-transform-es2015-modules-commonjs: "^6.26.0"
+        babel-plugin-transform-runtime: "^6.22.0"
+        babel-plugin-transform-vue-jsx: "^3.5.0"
+        babel-preset-env: "^1.3.2"
+        babel-preset-stage-2: "^6.22.0"
+        babel-register: "^6.22.0"
+        chalk: "^2.0.1"
+        chromedriver: "^2.27.2"
+        copy-webpack-plugin: "^4.0.1"
+        cross-spawn: "^5.0.1"
+        css-loader: "^0.28.0"
+        eslint: "^4.15.0"
+        eslint-config-standard: "^10.2.1"
+        eslint-friendly-formatter: "^3.0.0"
+        eslint-loader: "^1.7.1"
+        eslint-plugin-import: "^2.7.0"
+        eslint-plugin-node: "^5.2.0"
+        eslint-plugin-promise: "^3.4.0"
+        eslint-plugin-standard: "^3.0.1"
+        eslint-plugin-vue: "^4.0.0"
+        extract-text-webpack-plugin: "^3.0.0"
+        file-loader: "^1.1.4"
+        friendly-errors-webpack-plugin: "^1.6.1"
+        html-webpack-plugin: "^2.30.1"
+        jest: "^22.0.4"
+        jest-serializer-vue: "^0.3.0"
+        nightwatch: "^0.9.12"
+        node-notifier: "^5.1.2"
+        optimize-css-assets-webpack-plugin: "^3.2.0"
+        ora: "^1.2.0"
+        portfinder: "^1.0.13"
+        postcss-import: "^11.0.0"
+        postcss-loader: "^2.0.8"
+        postcss-url: "^7.2.1"
+        rimraf: "^2.6.0"
+        selenium-server: "^3.0.1"
+        semver: "^5.3.0"
+        shelljs: "^0.7.6"
+        uglifyjs-webpack-plugin: "^1.1.1"
+        url-loader: "^0.5.8"
+        vue-jest: "^1.0.2"
+        vue-loader: "^13.3.0"
+        vue-style-loader: "^3.0.1"
+        vue-template-compiler: "^2.5.2"
+        webpack: "^3.6.0"
+        webpack-bundle-analyzer: "^2.9.0"
+        webpack-dev-server: "^2.9.1"
+        webpack-merge: "^4.1.0"
+      engines: 
+        node: ">= 6.0.0"
+        npm: ">= 3.0.0"
+      browserslist: 
+        - "> 1%"
+        - "last 2 versions"
+        - "not ie <= 8"
+      readme: "# vueproject\n\n> My frist vue project\n\n## Build Setup\n\n``` bash\n# install dependencies\nnpm install\n\n# serve with hot reload at localhost:8080\nnpm run dev\n\n# build for production with minification\nnpm run build\n\n# build for production and view the bundle analyzer report\nnpm run build --report\n\n# run unit tests\nnpm run unit\n\n# run e2e tests\nnpm run e2e\n\n# run all tests\nnpm test\n```\n\nFor a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).\n"
+      readmeFilename: "README.md"
+      _id: "vueproject@1.0.0"
+    prefix: "/home/xuwen/WebstormProjects/vueProjectStudy"
+  1 debug pnpm:stage: "resolution_started"
+  2 debug pnpm:progress: 
+    pkg: 
+      rawSpec: "components/home.vue"
+    status: "installing"
+  3 debug pnpm:progress: 
+    status: "error"
+    pkg: 
+      rawSpec: "components/home.vue"
+  4 error pnpm: 
+    message: 
+      code: 128
+      stdout: ""
+      stderr: "ERROR: Repository not found.\nfatal: 无法读取远程仓库。\n\n请确认您有正确的访问权限并且仓库存在。\n"
+      failed: true
+      signal: null
+      cmd: "git ls-remote --refs git+ssh://git@github.com/components/home.vue.git master"
+      timedOut: false
+      killed: false
+    err: 
+      name: "Error"
+      message: "Command failed: git ls-remote --refs git+ssh://git@github.com/components/home.vue.git master\nERROR: Repository not found.\nfatal: 无法读取远程仓库。\n\n请确认您有正确的访问权限并且仓库存在。\n\n"
+      code: 128
+      stack: "Error: Command failed: git ls-remote --refs git+ssh://git@github.com/components/home.vue.git master\nERROR: Repository not found.\nfatal: 无法读取远程仓库。\n\n请确认您有正确的访问权限并且仓库存在。\n\n\n    at makeError (/usr/local/lib/node_modules/pnpm/lib/node_modules/execa/index.js:174:9)\n    at Promise.all.then.arr (/usr/local/lib/node_modules/pnpm/lib/node_modules/execa/index.js:278:16)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
