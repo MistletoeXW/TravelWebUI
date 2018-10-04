@@ -2,6 +2,7 @@ dependencies:
   fastclick: 1.0.6
   stylus: 0.54.5
   stylus-loader: 3.0.2
+  vue-awesome-swiper: 3.1.3
 packages:
   /amdefine/1.0.1:
     dev: false
@@ -38,6 +39,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-K23FHJ/Mt404FSlp6gSZCevIbTMLX0j3fmHhUEhQ3Wq0FMODW3+cUSoLdy1Gx4polAf4t/lphhmHH35BB8cLYw==
+  /dom7/2.1.2:
+    dependencies:
+      ssr-window: 1.0.1
+    dev: false
+    resolution:
+      integrity: sha512-cGwWtpu7KY3JnbREGqG4EGC/u+1hyLfWVMqrqRjmwiO8d5i4B+0imLZAQ/cJbiXnjbs0pdIUzcUyeI9BbnyKNg==
   /emojis-list/2.1.0:
     dev: false
     engines:
@@ -117,6 +124,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-tgp+dl5cGk28utYktBsrFqA7HKgrhgPsg6Z/EfhWI4gl1Hwq8B/GmY/0oXZ6nF8hDVesS/FpnYaD/kOWhYQvyg==
+  /object-assign/4.1.1:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
   /once/1.4.0:
     dependencies:
       wrappy: 1.0.2
@@ -142,6 +155,10 @@ packages:
       node: '>=0.8.0'
     resolution:
       integrity: sha1-wkvBRspRfBRx9drL4lcbK3+eM0Y=
+  /ssr-window/1.0.1:
+    dev: false
+    resolution:
+      integrity: sha512-dgFqB+f00LJTEgb6UXhx0h+SrG50LJvti2yMKMqAgzfUmUXZrLSv2fjULF7AWGwK25EXu8+smLR3jYsJQChPsg==
   /stylus-loader/3.0.2:
     dependencies:
       loader-utils: 1.1.0
@@ -164,6 +181,26 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-QrlWCTHKcJDOhRWnmLqeaqPW3Hk=
+  /swiper/4.4.1:
+    dependencies:
+      dom7: 2.1.2
+      ssr-window: 1.0.1
+    dev: false
+    engines:
+      node: '>= 4.7.0'
+    requiresBuild: true
+    resolution:
+      integrity: sha512-SONgpB1mFh++eFiUDOCggwW2ZzsWMEf3+SEROcQ+qXPYUnyD423l3uDsk+0jdo/a4pXeOJmH0oN3XK5maMqQyQ==
+  /vue-awesome-swiper/3.1.3:
+    dependencies:
+      object-assign: 4.1.1
+      swiper: 4.4.1
+    dev: false
+    engines:
+      node: '>= 4.0.0'
+      npm: '>= 3.0.0'
+    resolution:
+      integrity: sha512-E7suzkyApO8vNZbgdEnjSmnpsmQZyRvSVXJ7sey3XYwKPOkLhH3+GnHroBw+5PZIQXvWBwdCeQsPG1xQ1r1Rhg==
   /when/3.6.4:
     dev: false
     resolution:
@@ -179,3 +216,4 @@ specifiers:
   fastclick: ^1.0.6
   stylus: ^0.54.5
   stylus-loader: ^3.0.2
+  vue-awesome-swiper: ^3.1.3
