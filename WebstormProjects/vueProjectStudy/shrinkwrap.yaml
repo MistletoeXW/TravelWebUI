@@ -1,4 +1,5 @@
 dependencies:
+  axios: 0.18.0
   fastclick: 1.0.6
   stylus: 0.54.5
   stylus-loader: 3.0.2
@@ -10,6 +11,14 @@ packages:
       node: '>=0.4.2'
     resolution:
       integrity: sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
+  /axios/0.18.0:
+    dependencies:
+      follow-redirects: 1.5.8
+      is-buffer: 1.1.6
+    dev: false
+    resolution:
+      integrity: sha1-MtU+SFHv3AoRmTts0AB4nXDAUQI=
+      tarball: 'http://registry.npmjs.org/axios/-/axios-0.18.0.tgz'
   /balanced-match/1.0.0:
     dev: false
     resolution:
@@ -33,6 +42,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-Mh9s9zeCpv91ERE5D8BeLGV9jJs=
+  /debug/3.1.0:
+    dependencies:
+      ms: 2.0.0
+    dev: false
+    resolution:
+      integrity: sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
   /debug/4.0.1:
     dependencies:
       ms: 2.1.1
@@ -55,6 +70,14 @@ packages:
     dev: false
     resolution:
       integrity: sha1-FhYlsnsaWAZAWTa9qaLBkm0Gvmo=
+  /follow-redirects/1.5.8:
+    dependencies:
+      debug: 3.1.0
+    dev: false
+    engines:
+      node: '>=4.0'
+    resolution:
+      integrity: sha512-sy1mXPmv7kLAMKW/8XofG7o9T+6gAjzdZK4AJF6ryqQYUa/hnzgiypoeUecZ53x7XiqKNEpNqLtS97MshW2nxg==
   /fs.realpath/1.0.0:
     dev: false
     resolution:
@@ -81,6 +104,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
+  /is-buffer/1.1.6:
+    dev: false
+    resolution:
+      integrity: sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
   /json5/0.5.1:
     dev: false
     hasBin: true
@@ -120,6 +147,10 @@ packages:
     resolution:
       integrity: sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
       tarball: 'http://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz'
+  /ms/2.0.0:
+    dev: false
+    resolution:
+      integrity: sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
   /ms/2.1.1:
     dev: false
     resolution:
@@ -213,6 +244,7 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
+  axios: ^0.18.0
   fastclick: ^1.0.6
   stylus: ^0.54.5
   stylus-loader: ^3.0.2
